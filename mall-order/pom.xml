@@ -31,10 +31,19 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.gjw</groupId>
+            <artifactId>mall-common</artifactId>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.gjw</groupId>
+                <artifactId>mall-common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -69,7 +78,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.1.18.RELEASE</version>
                 <configuration>
-                    <mainClass>com.gjw.order.order.MallOrderApplication</mainClass>
+                    <mainClass>com.gjw.gulimall.order.MallOrderApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

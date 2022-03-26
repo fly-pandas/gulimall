@@ -1,0 +1,20 @@
+package com.gjw.gulimall.product.service;
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.gjw.common.utils.PageUtils;
+import com.gjw.gulimall.product.entity.SpuCommentEntity;
+
+import java.util.Map;
+
+/**
+ * 商品评价
+ *
+ * @author guojiwei
+ * @email guojiwei00@gmail.com
+ * @date 2022-03-21 20:40:15
+ */
+public interface SpuCommentService extends IService<SpuCommentEntity> {
+
+    PageUtils queryPage(Map<String, Object> params);
+}
+
